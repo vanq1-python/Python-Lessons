@@ -1,20 +1,10 @@
-# Сперва написал программу без операторов break и continue
-# my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-# i = 0
-# while my_list[i] >= 0 and i <= len(my_list):
-#     if my_list[i] >= 1:
-#         print(my_list[i])
-#         i += 1
-#     else:
-#         i += 1
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 i = 0
-while True:
-    if my_list[i] < 0:
-        break
-    elif my_list[i] == 0:
-        i += 1
-    elif my_list[i] >= 0 and i <= len(my_list):
+while i < len(my_list):
+    if my_list[i] >= 1:
         print(my_list[i])
         i += 1
-# Не разобрался где нужно использовать оператор continue с данными условиями.
+    elif my_list[i] == 0:
+        i += 1
+    else:
+        break
