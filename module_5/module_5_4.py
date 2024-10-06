@@ -1,4 +1,4 @@
-class House():
+class House:
     houses_history = []
 
     def __new__(cls, *args, **kwargs):
