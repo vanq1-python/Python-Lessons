@@ -20,8 +20,3 @@ def introspection_info(obj):
 
 number_info = introspection_info({'dog': 'home', 'bear': 'wild'})
 pprint(number_info)
-
-
-
-
-
